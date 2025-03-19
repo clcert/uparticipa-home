@@ -1,0 +1,73 @@
+@import "~bulma/bulma";
+
+@import "bulma/css/bulma.min.css";
+
+/* Custom Styles */
+body {
+  background-color: #f5f5f5;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #4a4a4a;
+}
+
+.navbar {
+  background-color: #004a91;
+}
+
+.navbar .navbar-item,
+.navbar .navbar-link {
+  color: #ffffff;
+}
+
+.navbar .navbar-item:hover,
+.navbar .navbar-link:hover {
+  background-color: #002950;
+}
+
+.navbar .navbar-burger span {
+  background-color: #ffffff;
+}
+
+.hero {
+  background-image: url('/images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center center;
+  color: #ffffff;
+  text-align: center;
+}
+
+.hero .title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero .subtitle {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.section {
+  padding: 3rem 1.5rem;
+}
+
+.section .title {
+  color: #2a2a2a;
+  font-size: 2rem;
+}
+
+.section .content {
+  font-size: 1.125rem;
+}
+
+.footer {
+  background-color: #004a91;
+  color: #ffffff;
+  padding: 2rem 1.5rem;
+}
+
+.footer a {
+  color: #ffdd57;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
