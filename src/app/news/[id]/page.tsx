@@ -9,8 +9,8 @@ type ArticleProps = {
     params: Promise<{ id: string }>;
 }
 
-export function generateStaticParams() {
-    return [{ slug: [""] }]
+export async function generateStaticParams() {
+    return [{ id: [""] }]
 }
 
 export default async function ArticlePage({ params }: ArticleProps) {
