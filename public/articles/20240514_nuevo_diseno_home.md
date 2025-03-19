@@ -1,7 +1,7 @@
 ---
 title: 'Participa UChile lanza nueva Página Principal para potenciar la transparencia y accesibilidad del sistema'
 date: '2024-05-14'
-image: '/images/articles/nuevo_diseño_home.png'
+image: '/images/articles/nuevo_diseno_home.png'
 resume: 'El proyecto de investigación aplicada sobre votación electrónica, Participa UChile, ha dado un paso adelante con el lanzamiento de su nueva página principal. La nueva página permite facilitar el acceso al Portal de Información Electoral.'
 ---
 El proyecto de investigación aplicada sobre votación electrónica, Participa UChile, ha dado un paso adelante con el lanzamiento de su nueva página principal. La nueva página permite facilitar el acceso al Portal de Información Electoral. Este portal ofrece a todas las personas, especialmente a las Juntas Electorales de la Casa de Bello, la capacidad de realizar un seguimiento y monitoreo en tiempo real de las elecciones.
