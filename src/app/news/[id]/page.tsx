@@ -9,6 +9,10 @@ type ArticleProps = {
     params: Promise<{ id: string }>;
 }
 
+export function generateStaticParams() {
+    return [{ slug: [""] }]
+}
+
 export default async function ArticlePage({ params }: ArticleProps) {
     const { id } = await params;
     const filePath = path.join(process.cwd(), 'public/articles', `${id}.md`);
