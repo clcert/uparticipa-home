@@ -6,13 +6,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 interface ArticleProps {
-    params: {
-        id: string;
-    };
+    params: Promise<{ id: string }>;
 }
 
-export default function ArticlePage({ params }: ArticleProps) {
-    const { id } = params;
+export async function ArticlePage({ params }: ArticleProps) {
+    const { id } = await params;
     const filePath = path.join(process.cwd(), 'public/articles', `${id}.md`);
     const fileContents = fs.readFileSync(filePath, 'utf8');
     const { data, content } = matter(fileContents);
