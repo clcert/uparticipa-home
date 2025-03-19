@@ -5,11 +5,11 @@ import ReactMarkdown from 'react-markdown';
 import Image from 'next/image';
 import Link from 'next/link';
 
-interface ArticleProps {
+type ArticleProps = {
     params: Promise<{ id: string }>;
 }
 
-export async function ArticlePage({ params }: ArticleProps) {
+export default async function ArticlePage({ params }: ArticleProps) {
     const { id } = await params;
     const filePath = path.join(process.cwd(), 'public/articles', `${id}.md`);
     const fileContents = fs.readFileSync(filePath, 'utf8');
