@@ -10,7 +10,12 @@ type ArticleProps = {
 }
 
 export async function generateStaticParams() {
-    return [{ id: [""] }]
+    const articlesDirectory = path.join(process.cwd(), 'public/articles');
+    const filenames = fs.readdirSync(articlesDirectory);
+    
+    return filenames.map((filename) => ({
+        id: filename.replace('.md', '')
+    }))
 }
 
 export default async function ArticlePage({ params }: ArticleProps) {
