@@ -32,7 +32,7 @@ export default function Navbar() {
               FAQ
             </Link>
             
-            <Link className="navbar-item" href="https://docs.uparticipa.cl" target='_blank'>
+            <Link className="navbar-item" href="https://docs.uparticipa.cl/docs/prologue/intro/" target='_blank'>
               Documentación
             </Link>
 
@@ -42,10 +42,6 @@ export default function Navbar() {
 
             <Link className="navbar-item" href="/team">
               Equipo
-            </Link>
-
-            <Link className="navbar-item" href="#">
-              Contacto
             </Link>
 
           </div>
