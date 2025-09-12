@@ -10,6 +10,7 @@ export default function Footer() {
           la Vicerrectoría de Asuntos Económicos y Gestión Institucional, y 
           la Facultad de Ciencias Físicas y Matemáticas de la Universidad de Chile.
           </p>
+          <p><a href="/privacy-policy">Política de Privacidad</a></p>
         </div>
       </div>
     </footer>
