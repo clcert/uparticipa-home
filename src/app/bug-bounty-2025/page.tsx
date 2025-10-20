@@ -1,10 +1,8 @@
 export default function BugBounty2025() {
 
-    const genDate = "";
     const formUrl = "#";
     const termsUrl = "#terms-title";
-    const contact = "";
-
+    
     return (
         <div>
             <section className="hero is-light" aria-labelledby="page-title">
@@ -266,7 +264,7 @@ export default function BugBounty2025() {
                         <h4>3. Fuera de alcance (out of scope)</h4>
                         <h5>3.1. Dominios</h5>
                         <ul>
-                            <li>Cualquier dominio que no esté listado en la sección "Activos" está fuera del
+                            <li>Cualquier dominio que no esté listado en la sección &quot;Activos&quot; está fuera del
                                 alcance del programa.
                             </li>
                             <li>
