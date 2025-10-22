@@ -23,18 +23,20 @@ export default function BugBounty2025() {
                         </h3>
                         <p>
                             El Programa <span className="has-text-weight-bold">Bug Bounty UParticipa 2025</span> del proyecto <a href="https://uparticipa.cl" target="_blank">UParticipa</a> (de ahora
-                            en adelante, “el programa”) consiste en un concurso disponible
-                            para personas pertenecientes a la comunidad de la Universidad de
+                            en adelante, “el programa”) es un concurso para  
+                               <span className="has-text-weight-bold">encontrar y reportar
+                                vulnerabilidades que puedan existir en la plataforma open source
+                                UParticipa</span>. 
+                            El concurso está abierto a
+                            personas pertenecientes a la comunidad de la Universidad de
                             Chile (estudiantes, académicos/as, funcionarios/as y alumni),
                             interesados/as en el área de Ciberseguridad (de ahora en adelante,
-                            “hackers”), con el objetivo de que se puedan <span className="has-text-weight-bold">encontrar y reportar
-                                diversas vulnerabilidades que puedan existir en la plataforma
-                                UParticipa</span>.
+                            “hackers”). 
                         </p>
                         <p>
                             Las vulnerabilidades reportadas serán asociadas a una cierta
-                            categoría, referida al área del sistema de votación electrónico
-                            que estaría siendo comprometida. En el programa se premiarán las
+                            categoría, asociada al área del sistema de votación electrónico
+                            que potencialmente afectaría. En el programa se premiarán las
                             mejores vulnerabilidades encontradas por cada categoría, las
                             cuales serán puntuadas y decididas por un jurado externo al equipo
                             de UParticipa.
@@ -46,21 +48,23 @@ export default function BugBounty2025() {
                             Sobre los/las Hackers
                         </h3>
                         <p>
-                            El público objetivo del programa serán miembros de la comunidad de
-                            la Universidad de Chile, entre los cuales están estudiantes,
+                            El público objetivo del programa son miembros de la comunidad de
+                            la Universidad de Chile, en particular estudiantes,
                             académicos/as, funcionarios/as y alumni de la Casa de Bello. Por
-                            la naturaleza del programa, las personas participantes son
-                            personas interesadas y con conocimiento previo en temas de
+                            la naturaleza del programa, se espera que las personas participantes sean
+                            personas con conocimientos en áreas como
                             Ciberseguridad, Hacking Ético y Criptografía Aplicada.
                         </p>
                         <p>
                             Para participar del programa, y poder enviar un reporte, las personas
-                            tendrán que tener un correo electrónico institucional de la Universidad de Chile.
+                            deben tener una dirección de correo electrónico institucional de la Universidad de Chile.
                         </p>
                         <p>
                             Al momento de enviar un reporte, no es necesario indicar los datos personales
-                            relacionados al hacker. Eso sí, para poder entregar el premio durante la ceremonia
-                            de premiación, sí se van a solicitar algunos datos: nombre, estamento y unidad académica.
+                            del (de la) autor(a) o hacker. Al finalizar el concurso, sin embargo, 
+                            se van a solicitar a los/las ganadores/as algunos datos como nombre, estamento y unidad académica
+                            para poder entregar el premio durante la ceremonia
+                            de premiación.
                         </p>
                     </div>
 
@@ -232,7 +236,7 @@ export default function BugBounty2025() {
                         <ul>
                             <li>
                                 Si una vulnerabilidad es reportada por más de un/una hacker,
-                                solo se le contabilizará al primer envío realizado.
+                                solo se le contabilizará al primer envío recepcionado.
                             </li>
                             <li>
                                 La vulnerabilidad reportada debe demostrar un impacto de seguridad
@@ -246,12 +250,12 @@ export default function BugBounty2025() {
                                 enviando varias respuestas al formulario).
                             </li>
                             <li>
-                                No debes divulgar públicamente la vulnerabilidad, antes de que el reporte
-                                se cree y se te otorgue el permiso para divulgarla.
+                                Se espera y solicita que los/las participantes (hackers) no divulguen públicamente una vulnerabilidad encontrada 
+                                antes de que el reporte sea recibido y se te otorgue el permiso para divulgarla.
                             </li>
                             <li>
-                                Debes proporcionar reportes detallados con pasos reproducibles. Si el reporte
-                                no es lo suficientemente detallado para reproducir el problema, no será elegible
+                                Todo reporte de vulnerabilidades debe proporcionar explicaciones detalladas con pasos reproducibles. Si el reporte
+                                no es lo suficientemente detallado para reproducir el problema por parte de los organizadores, no será elegible
                                 para ser premiado.
                             </li>
                         </ul>
@@ -268,11 +272,12 @@ export default function BugBounty2025() {
                                 alcance del programa.
                             </li>
                             <li>
-                                En particular, el servicio Participa UChile:
+                                En particular, estará fuera del alcance el servicio Participa UChile:
                                 <code>https://participa.uchile.cl/*</code> y <code>https://psifos-participa.uchile.cl/*</code>
                             </li>
                         </ul>
                         <h5>3.2. Aplicación Web</h5>
+                        Los siguientes ataques se consideran fuera del alcance para el concurso.
                         <ul>
                             <li>Toma de control de cuentas pre-autenticación / Ocupación de OAuth (OAuth squatting).</li>
                             <li>Self-XSS que no puede ser utilizado para explotar a otros usuarios.</li>
@@ -300,6 +305,7 @@ export default function BugBounty2025() {
                             <li>Inyección de encabezado Host sin impacto de negocio demostrado.</li>
                         </ul>
                         <h5>3.3. General</h5>
+                        Los siguientes ataques teóricos o vulnerabilidades se consideran fuera del alcance para el concurso.
                         <ul>
                             <li>Problemas de seguridad teóricos sin escenarios de explotación realistas o superficies de ataque, o problemas que requerirían interacciones complejas del usuario final para ser explotados.</li>
                             <li>Spam, ingeniería social e intrusión física.</li>
@@ -310,6 +316,7 @@ export default function BugBounty2025() {
                             <li>Reportes que indican que el software está desactualizado/vulnerable sin una prueba de concepto.</li>
                         </ul>
                         <h5>3.4. Vulnerabilidades Conocidas</h5>
+                        El sistema tiene vulnerabilidades conocidas, las cuales de ser reportadas no serán consideradas. Ellas son
                         <ul>
                             <li><b>Ballot Stuffing:</b> esta vulnerabilidad hace relación a la posibilidad de que el
                                 administrador del sistema pueda enviar votos a nombre de votantes válidos. Esta
