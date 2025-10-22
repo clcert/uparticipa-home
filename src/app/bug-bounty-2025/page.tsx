@@ -1,37 +1,103 @@
 export default function BugBounty2025() {
 
-    const formUrl = "#";
+    const formUrl = "https://forms.gle/RfEhtYZrW46BGBFN7";
     const termsUrl = "#terms-title";
-    
+
     return (
         <div>
-            <section className="hero is-light" aria-labelledby="page-title">
+            <section className="hero is-light" aria-labelledby="bug-bounty-title">
                 <div className="hero-body">
                     <div className="container">
-                        <h1 id="page-title" className="pt-6 title has-text-primary">
+                        <h1 id="bug-bounty-title" className="pt-6 title">
                             Programa Bug Bounty UParticipa 2025
                         </h1>
                     </div>
                 </div>
             </section>
 
+            <section className="section pb-0">
+                <div className="container">
+                    <div className="columns">
+                        {/* Desktop / wide screens: sticky sidebar menu */}
+                        <aside className="column is-hidden-mobile">
+                            <nav className="menu box" aria-label="Índice del programa" style={{ position: 'sticky', top: '1.5rem' }}>
+                                <p className="menu-label">Secciones</p>
+                                <ul className="menu-list">
+                                    <li><a href="#summary-title">Resumen</a></li>
+                                    <li><a href="#desc-title">Descripción General</a></li>
+                                    <li><a href="#audience-title">Sobre las/los Hackers</a></li>
+                                    <li><a href="#deploy-title">Despliegue del Sistema</a></li>
+                                    <li><a href="#dates-title">Fechas del Programa</a></li>
+                                    <li><a href="#cats-title">Categorías de Vulnerabilidades</a></li>
+                                    <li><a href="#reports-title">Envío de Reportes</a></li>
+                                    <li><a href="#ceremony-title">Ceremonia de Premiación</a></li>
+                                    <li><a href="#source-code-title">Código Fuente</a></li>
+                                    <li><a href="#terms-title">Términos y Condiciones</a></li>
+                                    <li><a href="#sponsors-title">Patrocinadores</a></li>
+                                </ul>
+                            </nav>
+                        </aside>
+
+                        <div className="is-hidden-tablet column">
+                            {/* Mobile: compact horizontal menu */}
+                            <div className="is-hidden-tablet mb-4">
+                                <div className="buttons has-addons is-flex-wrap-wrap">
+                                    <a className="button is-small" href="#summary-title">Resumen</a>
+                                    <a className="button is-small" href="#desc-title">Descripción</a>
+                                    <a className="button is-small" href="#audience-title">Hackers</a>
+                                    <a className="button is-small" href="#deploy-title">Despliegue</a>
+                                    <a className="button is-small" href="#dates-title">Fechas</a>
+                                    <a className="button is-small" href="#cats-title">Categorías</a>
+                                    <a className="button is-small" href="#reports-title">Reportes</a>
+                                    <a className="button is-small" href="#ceremony-title">Ceremonia</a>
+                                    <a className="button is-small" href="#source-code-title">Código</a>
+                                    <a className="button is-small" href="#terms-title">Términos</a>
+                                    <a className="button is-small" href="#sponsors-title">Patrocinadores</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <section className="section">
                 <div className="container content">
+                    <div className="box" role="region" aria-labelledby="summary-title">
+                        <h3 id="summary-title" className="title is-4">
+                            Resumen
+                        </h3>
+                        <h4 className="is-5">🚪 Acceso a Elecciones</h4>
+                        <h5 className="is-6">Enlaces de Acceso</h5>
+                        <ol>
+                            <li><b>Elección Simple:</b> <a href="#" target="_blank">https://bugbounty2025.uparticipa.cl/election/simple</a></li>
+                            <li><b>Elección Masiva:</b> <a href="#" target="_blank">https://bugbounty2025.uparticipa.cl/election/massive</a></li>
+                            <li><b>Elección con Opciones Excluyentes:</b> <a href="#" target="_blank">https://bugbounty2025.uparticipa.cl/election/exclusive</a></li>
+                        </ol>
+                        <h5 className="is-6">🔐 Credenciales de Acceso</h5>
+                        <ul>
+                            <li><b>Votante</b><br /> usuario: <code>testXX</code> (donde XX es un número entre 01 y 50)<br /> contraseña: <code>clcert1234</code></li>
+                        </ul>
+                        <h4 className="is-5">📝 Envío de Reportes</h4>
+                        <a className="button is-link is-light" href={formUrl} target="_blank" rel="noopener noreferrer">Ir al Formulario de Envío</a>
+
+
+                    </div>
+
                     <div className="box" role="region" aria-labelledby="desc-title">
                         <h3 id="desc-title" className="title is-4">
-                            Descripción General
+                            📄 Descripción General
                         </h3>
                         <p>
                             El Programa <span className="has-text-weight-bold">Bug Bounty UParticipa 2025</span> del proyecto <a href="https://uparticipa.cl" target="_blank">UParticipa</a> (de ahora
-                            en adelante, “el programa”) es un concurso para  
-                               <span className="has-text-weight-bold">encontrar y reportar
+                            en adelante, “el programa”) es un concurso para
+                            <span className="has-text-weight-bold"> encontrar y reportar
                                 vulnerabilidades que puedan existir en la plataforma open source
-                                UParticipa</span>. 
+                                UParticipa</span>.
                             El concurso está abierto a
                             personas pertenecientes a la comunidad de la Universidad de
                             Chile (estudiantes, académicos/as, funcionarios/as y alumni),
                             interesados/as en el área de Ciberseguridad (de ahora en adelante,
-                            “hackers”). 
+                            “hackers”).
                         </p>
                         <p>
                             Las vulnerabilidades reportadas serán asociadas a una cierta
@@ -45,7 +111,7 @@ export default function BugBounty2025() {
 
                     <div className="box" role="region" aria-labelledby="audience-title">
                         <h3 id="audience-title" className="title is-4">
-                            Sobre los/las Hackers
+                            👩🏻‍💻 Sobre las/los Hackers
                         </h3>
                         <p>
                             El público objetivo del programa son miembros de la comunidad de
@@ -61,8 +127,8 @@ export default function BugBounty2025() {
                         </p>
                         <p>
                             Al momento de enviar un reporte, no es necesario indicar los datos personales
-                            del (de la) autor(a) o hacker. Al finalizar el concurso, sin embargo, 
-                            se van a solicitar a los/las ganadores/as algunos datos como nombre, estamento y unidad académica
+                            del (de la) autor(a) o hacker. Al finalizar el concurso, sin embargo,
+                            se van a solicitar a las/los ganadores/as algunos datos como nombre, estamento y unidad académica
                             para poder entregar el premio durante la ceremonia
                             de premiación.
                         </p>
@@ -70,64 +136,73 @@ export default function BugBounty2025() {
 
                     <div className="box" role="region" aria-labelledby="deploy-title">
                         <h3 id="deploy-title" className="title is-4">
-                            Despliegue del Sistema
+                            🌐 Despliegue del Sistema
                         </h3>
                         <p>
-                            El sistema de UParticipa tendrá un despliegue específico para este programa, 
-                            el cual correrá la versión más actualizada del software desarrollado. Este 
+                            El sistema de UParticipa tendrá un despliegue específico para este programa,
+                            el cual correrá la versión más actualizada del software desarrollado. Este
                             despliegue está realizado utilizando el servicio cloud de <a href="https://www.hetzner.com/" target="_blank">Hetzner Online.</a>
                         </p>
-                        <p>
-                            El despliegue realizado posee 3 elecciones, las cuales están configuradas para que 
-                            se asemejen a elecciones con configuraciones muy cercanas a la realidad. Las elecciones 
+                        <div>
+                            El despliegue realizado posee 3 elecciones, las cuales están configuradas para que
+                            se asemejen a elecciones con configuraciones muy cercanas a la realidad. Las elecciones
                             tienen las siguientes características:
-                            <ol>
-                                <li><b>Elección Simple:</b> es una elección con dos preguntas: una de opción única (el votante puede 
-                                    escoger solamente una opción entre las candidaturas) y otra de opción múltiple (el votante puede 
-                                    escoger hasta tres opciones entre las candidaturas). 
+                            <ol className="mt-2">
+                                <li><b>Elección Simple:</b> es una elección con dos preguntas: una de opción única (el votante puede
+                                    escoger solamente una opción entre las candidaturas) y otra de opción múltiple (el votante puede
+                                    escoger hasta tres opciones entre las candidaturas).
                                 </li>
-                                <li><b>Elección Masiva:</b> es una elección con una única pregunta, la cual posee una lista masiva de 
-                                    candidaturas (se utiliza este tipo de elección cuando se tiene más de 20 candidaturas). 
+                                <li><b>Elección Masiva:</b> es una elección con una única pregunta, la cual posee una lista masiva de
+                                    candidaturas (se utiliza este tipo de elección cuando se tiene más de 20 candidaturas).
                                     Además, el votante puede escoger hasta 6 opciones entre las candidaturas.
                                 </li>
-                                <li><b>Elección con Opciones Excluyentes:</b> es una elección con una única pregunta, la cual 
-                                posee opciones excluyentes, es decir, donde solamente se puede marcar una preferencia por grupo 
-                                al que pertenece cada opción.</li>
+                                <li><b>Elección con Opciones Excluyentes:</b> es una elección con una única pregunta, la cual
+                                    posee opciones excluyentes, es decir, donde solamente se puede marcar una preferencia por grupo
+                                    al que pertenece cada opción.</li>
                             </ol>
                             Las elecciones desplegadas tienen las siguientes características comunes:
                             <ul>
-                                <li>El padrón se compone de 50 votantes.</li>
-                                <li>Cada elección se renovará cada 3 o 4 días, lo cual implica que la elección 
-                                    se eliminará y se configurará una, con las mismas características, pero totalmente 
+                                <li>El padrón se compone de 50 votantes. Los nombres de usuario de los votantes son <code>testXX</code> (XX de 01 a 50).
+                                    En la plataforma de autenticación, existen cuentas de usuario <code>testXX</code> (XX de 51 a 99) que <b>NO</b> están
+                                    en el padrón</li>
+                                <li>Cada elección se renovará cada 3 o 4 días, lo cual implica que la elección
+                                    se eliminará y se configurará una, con las mismas características, pero totalmente
                                     nueva, lo que significa que los votos y estado de la elección se eliminan completamente.
                                 </li>
-                                <li>Cada elección tendrá un único Custodio de Clave, cuyas credenciales no serán 
+                                <li>Cada elección tendrá un único Custodio de Clave, cuyas credenciales no serán
                                     entregadas de manera pública.
                                 </li>
-                                <li>Las elecciones no serán escrutadas de manera pública. Si algún/alguna hacker necesita 
+                                <li>Las elecciones no serán escrutadas de manera pública. Si algún/alguna hacker necesita
                                     conocer el escrutinio de alguna elección, deberá comunicarlo directamente al equipo de UParticipa.
                                 </li>
                             </ul>
-                        </p>
-                        <p>
-                            El despliegue está disponible en la siguiente URL: <a href="https://bugbounty2025.uparticipa.cl"><code>https://bugbounty2025.uparticipa.cl</code></a>
-                        </p>
+                        </div>
+                        <div className="mt-4">
+                            <p>
+                            El acceso a las elecciones desplegadas están disponible en los siguientes enlaces:
+                            </p>
+                            <ol>
+                                <li><b><a href="#" target="_blank">Elección Simple</a></b></li>
+                                <li><b><a href="#" target="_blank">Elección Masiva</a></b></li>
+                                <li><b><a href="#" target="_blank">Elección con Opciones Excluyentes</a></b></li>
+                            </ol>
+                        </div>
                     </div>
 
                     <div className="box" role="region" aria-labelledby="dates-title">
                         <h3 id="dates-title" className="title is-4">
-                            Fechas del Programa
+                            🗓 Fechas del Programa
                         </h3>
                         <div className="">
                             <div className="mb-2">
                                 <div className="notification is-info" role="note">
                                     <p><strong>INICIO:</strong> miércoles 22 de octubre a las 09:00 h</p>
-                                    <p><strong>FIN:</strong> viernes 28 de octubre a las 17:00 h</p>
+                                    <p><strong>FIN:</strong> viernes 30 de noviembre a las 17:00 h</p>
                                 </div>
                             </div>
                             <div className="mt-2">
                                 <div className="notification is-info" role="note">
-                                    <strong>CHARLA DE LANZAMIENTO (online):</strong> miércoles 22 de
+                                    <strong>CHARLA DE LANZAMIENTO (online):</strong> jueves 23 de
                                     octubre a las 16:30 h
                                 </div>
                             </div>
@@ -142,12 +217,12 @@ export default function BugBounty2025() {
 
                     <div className="box" role="region" aria-labelledby="cats-title">
                         <h3 id="cats-title" className="title is-4">
-                            Categorías de Vulnerabilidades
+                            👾 Categorías de Vulnerabilidades
                         </h3>
                         <p>
                             Las vulnerabilidades reportadas se dividirán en alguna de las
-                            siguientes categorías, de las cuales se premiará la mejor
-                            vulnerabilidad reportada:
+                            siguientes categorías, de las cuales se premiará la mejor vulnerabilidad reportada
+                            en cada categoría (se entregarán 4 premios en total):
                         </p>
                         <ul>
                             <li><strong>Confidencialidad del Voto:</strong> vulnerabilidades que
@@ -168,7 +243,7 @@ export default function BugBounty2025() {
 
                     <div className="box" role="region" aria-labelledby="reports-title">
                         <h3 id="reports-title" className="title is-4">
-                            Envío de Reportes
+                            📝 Envío de Reportes
                         </h3>
                         <p>
                             Los reportes se enviarán a través de un formulario dispuesto para
@@ -213,24 +288,48 @@ export default function BugBounty2025() {
                         aria-labelledby="ceremony-title"
                     >
                         <h3 id="ceremony-title" className="title is-4">
-                            Ceremonia de Premiación
+                            🏅 Ceremonia de Premiación
                         </h3>
                         <p>
                             Se realizará una Ceremonia de Premiación el día miércoles 10 de
                             diciembre de 2025 en el Departamento de Ciencias de la Computación
                             de la Universidad de Chile (Beauchef #851). En dicha Ceremonia se
                             entregarán los premios de los reportes ganadores en cada una de las categorías,
-                            además de que el equipo de UParticipa
-                            comentará sobre las vulnerabilidades encontradas, y las
+                            además de que se realizará un <b>Conversatorio de Vulnerabilidades y Desafíos UParticipa</b>, 
+                            donde se comentará sobre las vulnerabilidades encontradas, y las
                             actualizaciones que se planificarán para poder solucionarlas. Se
-                            contactará de antemano a los/las hackers que hayan ganado, para que
+                            contactará de antemano a las/los hackers que hayan ganado, para que
                             puedan asistir a la Ceremonia.
                         </p>
+                        <h5 className="is-6">Premios</h5>
+                        <p>
+                            A cada reporte ganador, en cada una de las categorías, se le entregará un XXX.
+                        </p>
+                    </div>
+
+                    <div
+                        className="box"
+                        role="region"
+                        aria-labelledby="source-code-title"
+                    >
+                        <h3 id="source-code-title" className="title is-4">
+                            📖 Código Fuente
+                        </h3>
+                        <p>
+                            El software de UParticipa es open source, y el software se denomina <code>Psifos Voting</code>. 
+                            El código fuente de los distintos módulos que conforman el software está disponible en los siguientes repositorios de GitHub:
+                        </p>
+                        <ul>
+                            <li><a href="https://github.com/clcert/psifos-frontend" target="_blank">Psifos Voting Frontend</a></li>
+                            <li><a href="https://github.com/clcert/psifos-frontend" target="_blank">Psifos Voting Backend Operativo</a></li>
+                            <li><a href="https://github.com/clcert/psifos-frontend" target="_blank">Psifos Voting Backend Informativo</a></li>
+                        </ul>
+                        
                     </div>
 
                     <div className="box" role="region" aria-labelledby="terms-title">
                         <h3 id="terms-title" className="title is-4">
-                            Términos y Condiciones
+                            🤝 Términos y Condiciones
                         </h3>
                         <h4>1. Eligibilidad del Reporte</h4>
                         <ul>
@@ -250,7 +349,7 @@ export default function BugBounty2025() {
                                 enviando varias respuestas al formulario).
                             </li>
                             <li>
-                                Se espera y solicita que los/las participantes (hackers) no divulguen públicamente una vulnerabilidad encontrada 
+                                Se espera y solicita que las/los participantes (hackers) no divulguen públicamente una vulnerabilidad encontrada
                                 antes de que el reporte sea recibido y se te otorgue el permiso para divulgarla.
                             </li>
                             <li>
@@ -274,6 +373,9 @@ export default function BugBounty2025() {
                             <li>
                                 En particular, estará fuera del alcance el servicio Participa UChile:
                                 <code>https://participa.uchile.cl/*</code> y <code>https://psifos-participa.uchile.cl/*</code>
+                            </li>
+                            <li>
+                                El portal de autenticación de CLCERT: <code>https://auth.labs.clcert.cl/*</code>
                             </li>
                         </ul>
                         <h5>3.2. Aplicación Web</h5>
@@ -333,16 +435,55 @@ export default function BugBounty2025() {
                                 remota habilita la opción de que un ataque de coerción sea exitoso, es decir, realizar algún
                                 tipo de acción que obligue a un votante a votar por alguna preferencia específica. Esto tiene
                                 que ver con compra/venta de votos, o presiones indebidas.</li>
-                            <li><b>Robo de Credenciales: </b>si se realiza un ataque de phishing, podrían robarse las credenciales 
-                            de un votante, o del administrador, y realizar acciones de manera indebida.</li>
-                            <li><i>NOTA: el equipo de UParticipa maneja una lista interna de otras vulnerabilidades conocidas, 
-                                las cuales no se revelarán durante el programa, debido a que espera que los/las hackers puedan 
-                                encontrarlas y reportarlas. De todas maneras, independientemente si son encontradas o no, 
-                                el equipo de UParticipa se compromete a revelar 
-                                dicha lista al momento de finalizar el programa, y así transparentar la información 
+                            <li className="pb-2"><b>Robo de Credenciales: </b>si se realiza un ataque de phishing, podrían robarse las credenciales
+                                de un votante, o del administrador, y realizar acciones de manera indebida.</li>
+                            <i>NOTA: el equipo de UParticipa maneja una lista interna de otras vulnerabilidades conocidas,
+                                las cuales no se revelarán durante el programa, debido a que espera que las/los hackers puedan
+                                encontrarlas y reportarlas. De todas maneras, independientemente si son encontradas o no,
+                                el equipo de UParticipa se compromete a revelar
+                                dicha lista al momento de finalizar el programa, y así transparentar la información
                                 que maneja sobre el sistema.</i>
-                            </li>
+                            
                         </ul>
+                    </div>
+
+                    <div
+                        className="box"
+                        role="region"
+                        aria-labelledby="sponsors-title"
+                    >
+                        <h3 id="sponsors-title" className="title is-4">
+                            🤩 Patrocinadores
+                        </h3>
+                        <p>
+                            UParticipa agradece el patrocinio y apoyo de las siguientes entidades para la realización del Programa Bug Bounty UParticipa 2025:
+                        </p>
+                        <div className="columns">
+                            <div className="column">
+                                <figure>
+                                    <img src="/images/bug-bounty-2025/logo-nic-chile.png" alt="Logo NIC Chile" style={{ maxHeight: '270px' }} />
+                                </figure>
+                                <div className="has-text-centered">
+                                <code><a href="https://nic.cl/" target="_blank">https://nic.cl/</a></code>
+                                </div>
+                            </div>
+                            <div className="column">
+                                <figure>
+                                    <img src="/images/bug-bounty-2025/logo-dreamlab.png" alt="Logo NIC Chile" style={{ maxHeight: '270px' }} />
+                                </figure>
+                                <div className="has-text-centered">
+                                    <code><a href="https://dreamlab.net/es/" target="_blank">https://dreamlab.net/es/</a></code>
+                                </div>
+                            </div>
+                        </div>
+                        <p>
+                            Gracias a su apoyo, es posible incentivar a la comunidad universitaria a involucrarse en la
+                            mejora continua de la plataforma UParticipa, y así fortalecer la seguridad del sistema de votación electrónica.
+                        </p>
+                    </div>
+
+                    <div className="box has-text-centered" role="region" aria-labelledby="final-message-title">
+                        <span className="is-size-4"><b>¡Mucho éxito y entretención para l@s Hackers!<br/>¿Estaremos preparad@s para sus ataques?</b></span>
                     </div>
 
                 </div>
