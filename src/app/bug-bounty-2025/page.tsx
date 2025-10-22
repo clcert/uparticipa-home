@@ -337,7 +337,8 @@ export default function BugBounty2025() {
                             de un votante, o del administrador, y realizar acciones de manera indebida.</li>
                             <li><i>NOTA: el equipo de UParticipa maneja una lista interna de otras vulnerabilidades conocidas, 
                                 las cuales no se revelarán durante el programa, debido a que espera que los/las hackers puedan 
-                                encontrarlas y reportarlas. De todas maneras, el equipo de UParticipa se compromete a revelar 
+                                encontrarlas y reportarlas. De todas maneras, independientemente si son encontradas o no, 
+                                el equipo de UParticipa se compromete a revelar 
                                 dicha lista al momento de finalizar el programa, y así transparentar la información 
                                 que maneja sobre el sistema.</i>
                             </li>
