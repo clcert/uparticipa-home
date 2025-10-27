@@ -6,11 +6,11 @@ export default function BugBounty2025() {
     return (
         <div>
             <section className="hero is-light" aria-labelledby="bug-bounty-title">
-                <div className="hero-body">
+                <div className="hero-body pb-0 mt-4">
                     <div className="container">
-                        <h1 id="bug-bounty-title" className="pt-6 title">
-                            Programa Bug Bounty UParticipa 2025
-                        </h1>
+                        <figure>
+                            <img src="/images/bug-bounty-2025/banner.png" alt="Banner Bug Bounty" style={{ maxHeight: '270px' }} />
+                        </figure>
                     </div>
                 </div>
             </section>
@@ -34,6 +34,7 @@ export default function BugBounty2025() {
                                     <li><a href="#source-code-title">Código Fuente</a></li>
                                     <li><a href="#terms-title">Términos y Condiciones</a></li>
                                     <li><a href="#sponsors-title">Patrocinadores</a></li>
+                                    <li><a href="#sponsors-title">Contacto</a></li>
                                 </ul>
                             </nav>
                         </aside>
@@ -53,6 +54,7 @@ export default function BugBounty2025() {
                                     <a className="button is-small" href="#source-code-title">Código</a>
                                     <a className="button is-small" href="#terms-title">Términos</a>
                                     <a className="button is-small" href="#sponsors-title">Patrocinadores</a>
+                                    <a className="button is-small" href="#sponsors-title">Contacto</a>
                                 </div>
                             </div>
                         </div>
@@ -69,9 +71,9 @@ export default function BugBounty2025() {
                         <h4 className="is-5">🚪 Acceso a Elecciones</h4>
                         <h5 className="is-6">Enlaces de Acceso</h5>
                         <ol>
-                            <li><b>Elección Simple:</b> <a href="#" target="_blank">https://bugbounty2025.uparticipa.cl/election/simple</a></li>
-                            <li><b>Elección Masiva:</b> <a href="#" target="_blank">https://bugbounty2025.uparticipa.cl/election/massive</a></li>
-                            <li><b>Elección con Opciones Excluyentes:</b> <a href="#" target="_blank">https://bugbounty2025.uparticipa.cl/election/exclusive</a></li>
+                            <li><b>Elección Simple:</b> <a href="https://bugbounty2025.uparticipa.cl/election/simple" target="_blank"><code>https://bugbounty2025.uparticipa.cl/election/simple</code></a></li>
+                            <li><b>Elección Masiva:</b> <a href="https://bugbounty2025.uparticipa.cl/election/massive" target="_blank"><code>https://bugbounty2025.uparticipa.cl/election/massive</code></a></li>
+                            <li><b>Elección con Opciones Excluyentes:</b> <a href="https://bugbounty2025.uparticipa.cl/election/exclusive" target="_blank"><code>https://bugbounty2025.uparticipa.cl/election/exclusive</code></a></li>
                         </ol>
                         <h5 className="is-6">🔐 Credenciales de Acceso</h5>
                         <ul>
@@ -303,7 +305,7 @@ export default function BugBounty2025() {
                         </p>
                         <h5 className="is-6">Premios</h5>
                         <p>
-                            A cada reporte ganador, en cada una de las categorías, se le entregará un XXX.
+                            A cada reporte ganador, en cada una de las categorías, se le entregará un premio, el cual se definirá en los próximos días.
                         </p>
                     </div>
 
@@ -321,8 +323,8 @@ export default function BugBounty2025() {
                         </p>
                         <ul>
                             <li><a href="https://github.com/clcert/psifos-frontend" target="_blank">Psifos Voting Frontend</a></li>
-                            <li><a href="https://github.com/clcert/psifos-frontend" target="_blank">Psifos Voting Backend Operativo</a></li>
-                            <li><a href="https://github.com/clcert/psifos-frontend" target="_blank">Psifos Voting Backend Informativo</a></li>
+                            <li><a href="https://github.com/clcert/psifos-backend-op" target="_blank">Psifos Voting Backend Operativo</a></li>
+                            <li><a href="https://github.com/clcert/psifos-backend-info" target="_blank">Psifos Voting Backend Informativo</a></li>
                         </ul>
                         
                     </div>
@@ -480,6 +482,17 @@ export default function BugBounty2025() {
                             Gracias a su apoyo, es posible incentivar a la comunidad universitaria a involucrarse en la
                             mejora continua de la plataforma UParticipa, y así fortalecer la seguridad del sistema de votación electrónica.
                         </p>
+                    </div>
+
+                    <div
+                        className="box"
+                        role="region"
+                        aria-labelledby="contact-title"
+                    >
+                        <h3 id="contact-title" className="title is-4">
+                            ☎️ Contacto
+                        </h3>
+                        <p>Para cualquier consulta u observación sobre el programa, enviar un correo a: <code>participa [at] uchile [dot] cl</code></p>
                     </div>
 
                     <div className="box has-text-centered" role="region" aria-labelledby="final-message-title">
