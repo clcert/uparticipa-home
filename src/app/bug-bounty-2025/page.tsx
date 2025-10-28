@@ -198,13 +198,13 @@ export default function BugBounty2025() {
                         <div className="">
                             <div className="mb-2">
                                 <div className="notification is-info" role="note">
-                                    <p><strong>INICIO:</strong> miércoles 27 de octubre a las 09:00 h</p>
+                                    <p><strong>INICIO:</strong> miércoles 29 de octubre a las 09:00 h</p>
                                     <p><strong>FIN:</strong> viernes 30 de noviembre a las 17:00 h</p>
                                 </div>
                             </div>
                             <div className="mt-2">
                                 <div className="notification is-info" role="note">
-                                    <strong>CHARLA DE LANZAMIENTO (online):</strong> jueves 28 de
+                                    <strong>CHARLA DE LANZAMIENTO (online):</strong> jueves 30 de
                                     octubre a las 16:30 h
                                 </div>
                             </div>
