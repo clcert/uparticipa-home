@@ -71,9 +71,9 @@ export default function BugBounty2025() {
                         <h4 className="is-5">🚪 Acceso a Elecciones</h4>
                         <h5 className="is-6">Enlaces de Acceso</h5>
                         <ol>
-                            <li><b>Elección Simple:</b> <a href="https://bugbounty2025.uparticipa.cl/psifos/api/app/simple/vote" target="_blank"><code>https://bugbounty2025.uparticipa.cl/psifos/api/app/simple/vote</code></a></li>
-                            <li><b>Elección Masiva:</b> <a href="https://bugbounty2025.uparticipa.cl/psifos/api/app/massive/vote" target="_blank"><code>https://bugbounty2025.uparticipa.cl/psifos/api/app/massive/vote</code></a></li>
-                            <li><b>Elección con Opciones Excluyentes:</b> <a href="https://bugbounty2025.uparticipa.cl/psifos/api/app/exclusive/vote" target="_blank"><code>https://bugbounty2025.uparticipa.cl/psifos/api/app/exclusive/vote</code></a></li>
+                            <li><b>Elección Simple:</b> <a href="https://bugbounty2025.uparticipa.cl/psifos/api/app/simple/vote" target="_blank"><code style={{wordBreak: "break-word"}}>https://bugbounty2025.uparticipa.cl/psifos/api/app/simple/vote</code></a></li>
+                            <li><b>Elección Masiva:</b> <a href="https://bugbounty2025.uparticipa.cl/psifos/api/app/massive/vote" target="_blank"><code style={{wordBreak: "break-word"}}>https://bugbounty2025.uparticipa.cl/psifos/api/app/massive/vote</code></a></li>
+                            <li><b>Elección con Opciones Excluyentes:</b> <a href="https://bugbounty2025.uparticipa.cl/psifos/api/app/exclusive/vote" target="_blank"><code style={{wordBreak: "break-word"}}>https://bugbounty2025.uparticipa.cl/psifos/api/app/exclusive/vote</code></a></li>
                         </ol>
                         <h5 className="is-6">🔐 Credenciales de Acceso</h5>
                         <ul>
@@ -363,7 +363,7 @@ export default function BugBounty2025() {
                         <h4>2. Activos</h4>
                         <ul>
                             <li>
-                                <code>https://bugbounty2025.uparticipa.cl/*</code>
+                                <code style={{wordBreak: "break-word"}}>https://bugbounty2025.uparticipa.cl/*</code>
                             </li>
                         </ul>
                         <h4>3. Fuera de alcance (out of scope)</h4>
@@ -374,10 +374,10 @@ export default function BugBounty2025() {
                             </li>
                             <li>
                                 En particular, estará fuera del alcance el servicio Participa UChile:
-                                <code>https://participa.uchile.cl/*</code> y <code>https://psifos-participa.uchile.cl/*</code>
+                                <code style={{wordBreak: "break-word"}}>https://participa.uchile.cl/*</code> y <code style={{wordBreak: "break-word"}}>https://psifos-participa.uchile.cl/*</code>
                             </li>
                             <li>
-                                El portal de autenticación de CLCERT: <code>https://auth.labs.clcert.cl/*</code>
+                                El portal de autenticación de CLCERT: <code style={{wordBreak: "break-word"}}>https://auth.labs.clcert.cl/*</code>
                             </li>
                         </ul>
                         <h5>3.2. Aplicación Web</h5>
