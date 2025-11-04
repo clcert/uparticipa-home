@@ -71,14 +71,15 @@ export default function BugBounty2025() {
                         <h4 className="is-5">🚪 Acceso a Elecciones</h4>
                         <h5 className="is-6">Enlaces de Acceso</h5>
                         <ol>
-                            <li><b>Elección Simple:</b> <a href="https://bugbounty2025.uparticipa.cl/psifos/api/app/simple/vote" target="_blank"><code style={{wordBreak: "break-word"}}>https://bugbounty2025.uparticipa.cl/psifos/api/app/simple/vote</code></a></li>
-                            <li><b>Elección Masiva:</b> <a href="https://bugbounty2025.uparticipa.cl/psifos/api/app/massive/vote" target="_blank"><code style={{wordBreak: "break-word"}}>https://bugbounty2025.uparticipa.cl/psifos/api/app/massive/vote</code></a></li>
-                            <li><b>Elección con Opciones Excluyentes:</b> <a href="https://bugbounty2025.uparticipa.cl/psifos/api/app/exclusive/vote" target="_blank"><code style={{wordBreak: "break-word"}}>https://bugbounty2025.uparticipa.cl/psifos/api/app/exclusive/vote</code></a></li>
+                            <li><a href="https://bugbounty2025.uparticipa.cl/psifos/api/app/simple/vote" target="_blank"><b>Elección Simple</b></a></li>
+                            <li><a href="https://bugbounty2025.uparticipa.cl/psifos/api/app/massive/vote" target="_blank"><b>Elección Masiva</b></a></li>
+                            <li><a href="https://bugbounty2025.uparticipa.cl/psifos/api/app/exclusive/vote" target="_blank"><b>Elección con Opciones Excluyentes</b></a></li>
                         </ol>
                         <h5 className="is-6">🔐 Credenciales de Acceso</h5>
                         <ul>
                             <li><b>Votante</b><br /> usuario: <code>testXX</code> (donde XX es un número entre 01 y 50)<br /> contraseña: <code>clcert1234</code></li>
                         </ul>
+                        <p className="subtitle is-italic">NOTA: Se recomienda utilizar ventana privada o ventana incógnito para ingresar a votar.</p>
                         <h4 className="is-5">📝 Envío de Reportes</h4>
                         <a className="button is-link is-light" href={formUrl} target="_blank" rel="noopener noreferrer">Ir al Formulario de Envío</a>
 
@@ -188,6 +189,7 @@ export default function BugBounty2025() {
                                 <li><b><a href="https://bugbounty2025.uparticipa.cl/psifos/api/app/massive/vote" target="_blank">Elección Masiva</a></b></li>
                                 <li><b><a href="https://bugbounty2025.uparticipa.cl/psifos/api/app/exclusive/vote" target="_blank">Elección con Opciones Excluyentes</a></b></li>
                             </ol>
+                            <p className="subtitle is-italic">NOTA: Se recomienda utilizar ventana privada o ventana incógnito para ingresar a votar.</p>
                         </div>
                     </div>
 
@@ -198,19 +200,19 @@ export default function BugBounty2025() {
                         <div className="">
                             <div className="mb-2">
                                 <div className="notification is-info" role="note">
-                                    <p><strong>INICIO:</strong> miércoles 29 de octubre a las 09:00 h</p>
-                                    <p><strong>FIN:</strong> viernes 30 de noviembre a las 17:00 h</p>
+                                    <p><strong>INICIO:</strong> miércoles 29 de octubre</p>
+                                    <p><strong>FIN:</strong> viernes 28 de noviembre</p>
                                 </div>
                             </div>
                             <div className="mt-2">
                                 <div className="notification is-info" role="note">
-                                    <strong>CHARLA DE LANZAMIENTO (online):</strong> jueves 30 de
-                                    octubre a las 16:30 h
+                                    <strong>CHARLA DE LANZAMIENTO:</strong> jueves 30 de octubre
+                                    <p><a href="https://youtu.be/s0hCtSdb7AQ" target="_blank">Ver video de charla de lanzamiento (YouTube) ⤴</a></p>
                                 </div>
                             </div>
                             <div className="mt-2">
                                 <div className="notification is-info" role="note">
-                                    <strong>CEREMONIA DE PREMIACIÓN (presencial):</strong> miércoles 10 de
+                                    <strong>CEREMONIA DE PREMIACIÓN:</strong> miércoles 10 de
                                     diciembre a las 12:00 h
                                 </div>
                             </div>
