@@ -10,7 +10,7 @@ type Tesista = {
   name: string;
   title: string;
   url: string;
-  year: int;
+  year: number;
 }
 
 type FormerMember = {
