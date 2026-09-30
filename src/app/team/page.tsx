@@ -23,10 +23,12 @@ const teamMembers: TeamMember[] = [
   { name: 'Camilo Gómez', role: 'Coordinador General', imageUrl: '/images/cgomez.jpg' },
   { name: 'Cristobal Jaramillo', role: 'Ingeniero de Desarrollo e Investigación', imageUrl: '/images/cjaramillo.jpg' },
   { name: 'Fernanda Pérez', role: 'Asistente Operativa', imageUrl: '/images/fperez.png' },
-  { name: 'Vicente Daie', role: 'Ingeniero DevSecOps', imageUrl: '/images/vdaie.jpeg' },
+  { name: 'Vicente Daie', role: 'Ingeniero DevSecOps', imageUrl: '/images/vdaie.png' },
 ];
 
 const tesistas: Tesista[] = [
+  { name: 'Joaquín Harcha Álvarez', title: 'Diseño e implementación de aplicación móvil para la plataforma de votación electrónica UParticipa', url: '', year: 2026 },
+  { name: 'Sergio Rojas Herrera', title: 'Modelamiento General y Desarrollo de Sistemas Electorales con Delegación de Votos', url: '', year: 2026 },
   { name: 'Tomás Alvarado Pizarro', title: 'Pentesting en Software de Votación Electronica, Participa Uchile', url: '', year: 2025 },
   { name: 'Fernanda Macías Herrera', title: 'Implementación de módulo de selección por ranking para el sistema de votación electrónica en la Plataforma Participa UChile', url: 'https://repositorio.uchile.cl/handle/2250/194753', year: 2023}
 ]
