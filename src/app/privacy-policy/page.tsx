@@ -3,7 +3,7 @@ export default function PrivacyPolicy() {
         <section className="section">
             <div className="container content">
                 <h1 id="pol-tica-de-privacidad" className="title is-2 has-text-weight-bold">POLÍTICA DE PRIVACIDAD</h1>
-                <p>Este documento describe las prácticas de privacidad usadas en la plataforma UParticipa (“el sitio”), y aplican única y exclusivamente a la información recolectada en el sitio.</p>
+                <p>Este documento describe las prácticas de privacidad usadas en la plataforma UParticipa (“el sitio”), y aplican única y exclusivamente a la información recolectada en el sitio y en la aplicación móvil UParticipa Mobile.</p>
                 <p>Esta política le informa a usted acerca de:</p>
                 <ul className="list-disc ml-5">
                     <li>Qué información personal identificable es recolectada a través del sitio, cómo es utilizada, y con quién es compartida.</li>
@@ -63,9 +63,18 @@ export default function PrivacyPolicy() {
                 <p>En UParticipa la seguridad es un tema serio, y por ello tomamos precauciones para proteger su información. Cuando Usted envía información confidencial a través del sitio web, su información está protegida tanto en línea (usando TLS) como fuera de línea.</p>
                 <p>En los casos en que recopilamos datos personales, estos son mantenidos solamente durante el tiempo que se requieren para la preparación y ejecución de la votación. Posterior a su cierre, y en un plazo no mayor a 10 días hábiles, los datos del padrón serán eliminados de nuestros sistemas y de sus respaldos. Los votos cifrados emitidos se mantendrán por un periodo de 12 meses posterior al cierre de la votación, a fin de permitir la verificación criptográfica del correcto cálculo de los resultados de la votación correspondiente.</p>
                 <p>Además de proteger su información transmitida en línea, esta también es protegida fuera de línea en nuestros servidores. Solo los miembros del equipo de UParticipa que requieran realizar alguna tarea específica pueden acceder a información personal identificable. Los computadores y servidores en los cuales almacenamos tal información se encuentran en un ambiente seguro y controlado, con acceso exclusivo a este equipo.</p>
+                <hr />
+                <h2 id="mobile" className="title is-4 mt-5">Aplicación móvil UParticipa Mobile</h2>
+                <p>Si Usted es Custodio de Clave y utiliza la aplicación móvil UParticipa Mobile, esta maneja la siguiente información:</p>
+                <ul className="list-disc ml-5">
+                    <li>Una credencial de sesión, que se obtiene al iniciar sesión con su cuenta institucional.<br /><em>Se utiliza para: Identificarlo ante los servidores de UParticipa.</em></li>
+                    <li>Su clave privada parcial, que se genera y se guarda únicamente en su teléfono y nunca se envía a nuestros servidores.<br /><em>Se utiliza para: Generar la clave de la elección y calcular sus resultados.</em></li>
+                </ul>
+                <p>La aplicación móvil guarda la credencial de sesión y la clave privada parcial en el almacenamiento seguro del teléfono y se eliminan al desinstalar la aplicación. La sesión expira tras una hora y se elimina del teléfono al cerrar sesión.</p>
+                <hr />
                 <p>Si Usted cree que no estamos cumpliendo con esta política de privacidad, puede comunicarse con nosotros inmediatamente por correo electrónico a <a href="mailto:participa@uchile.cl">participa@uchile.cl</a> para hacernos llegar su denuncia y le contactaremos para aclarar la situación.</p>
                 <hr />
-                <p><em>Revisada por:</em><br />Alejandro Hevia, julio 2022<br />Camilo Gómez, enero 2025</p>
+                <p><em>Revisada por:</em><br />Alejandro Hevia, julio 2022<br />Camilo Gómez, octubre 2026</p>
             </div>
         </section>
     );
